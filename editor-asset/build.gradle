@@ -1,0 +1,30 @@
+plugins {
+    id 'com.android.library'
+    id 'org.jetbrains.kotlin.android'
+    id 'com.pico.spatial.tools' version '6.1.0'
+}
+
+android {
+    namespace 'com.pico.spatial.sample.spatialaudio.editorAsset'
+    compileSdk 35
+
+    defaultConfig {
+        minSdkVersion 26
+        targetSdkVersion 35
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+    implementation(platform(libs.spatial.bom))
+    implementation(libs.spatial.core)
+}
+
+spatial {
+    name = "editor-asset"
+    spatialToolsVersion = 6.1
+}
