@@ -1,0 +1,11 @@
+# Spatial Editor project cache data
+.CacheData
+
+# Spatial Editor project library
+.Library
+
+# Spatial Editor user settings
+UserSettings/EditorSceneSettings.yaml
+UserSettings/EditorUserSettings.yaml
+UserSettings/EditorViewportSettings.yaml
+UserSettings/history.json
